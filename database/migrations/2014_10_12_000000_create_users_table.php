@@ -18,7 +18,7 @@ return new class extends Migration
             $table->longText('access_token')->nullable();
             $table->longText('refresh_token')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
